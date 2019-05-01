@@ -66,7 +66,7 @@ Each entry is either:
     ;; :mode "\\.ahk\\'"
     :defer t
     :init
-    (evil-make-overriding-map easy-hugo-mode-map 'normal)
+    (progn
     (spacemacs/set-leader-keys-for-major-mode 'easy-hugo-mode
       "n" 'easy-hugo-newpost
       "D" 'easy-hugo-article
@@ -90,4 +90,5 @@ Each entry is either:
       (kbd "TAB") 'easy-hugo-open
       (kbd "RET") 'easy-hugo-preview)
     )
-  )
+  :config
+  (evil-make-overriding-map easy-hugo-mode-map 'normal)))
