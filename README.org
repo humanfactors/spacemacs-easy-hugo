@@ -1,0 +1,46 @@
+#+TITLE: Hugo layer for Spacemacs
+
+[[file:img/logo.png]]
+
+* Table of Contents                                         :TOC_4_gh:noexport:
+- [[#description][Description]]
+- [[#install][Install]]
+  - [[#layer][Layer]]
+- [[#key-bindings][Key bindings]]
+
+* Description
+This layer provides Spacemacs friendly configuration for
+[[https://github.com/masasam/emacs-easy-hugo][easy-hugo-mode]] for creating websites and blogs with [[https://gohugo.io/][Hugo]].
+
+The layer primarily adds keybinds that are in the spirit of the original package, as well as major
+mode leader keys. The layer is in beta, and currently only has been tested for Hybrid modes.
+
+* Install
+** Layer
+To use this configuration layer, add it to your =~/.emacs.d/private/= or another directory in your
+Spacemacs layer search path. You will need to add =hugo= to the existing
+=dotspacemacs-configuration-layers= list in this file.
+
+* Key bindings
+
+Note that current all normal state keys are replaced entirely. This may be fixed in future.
+
+| Key Binding | Description                            |
+|-------------+----------------------------------------|
+| ~SPC m n~   | 'easy-hugo-newpost                     |
+| ~SPC m D~   | 'easy-hugo-article                     |
+| ~SPC m p~   | 'easy-hugo-preview                     |
+| ~SPC m P~   | 'easy-hugo-publish                     |
+| ~SPC m o~   | 'easy-hugo-open                        |
+| ~SPC m d~   | 'easy-hugo-delete~                     |
+| ~SPC m c~   | 'easy-hugo-open-config                 |
+| ~SPC m f~   | 'easy-hugo-open                        |
+| ~SPC m N~   | 'easy-hugo-no-help                     |
+| ~SPC m v~   | 'easy-hugo-view                        |
+| ~SPC m r~   | 'easy-hugo-refresh                     |
+| ~SPC m s~   | 'easy-hugo-sort-time                   |
+| ~SPC m S~   | 'easy-hugo-sort-char                   |
+| ~SPC m G~   | 'easy-hugo-github-deploy               |
+| ~SPC m A~   | 'easy-hugo-amazon-s3-deploy            |
+| ~SPC m C~   | 'easy-hugo-google-cloud-storage-deploy |
+| ~SPC m q~   | 'evil-delete-buffer                    |
