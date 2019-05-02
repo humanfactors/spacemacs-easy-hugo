@@ -17,7 +17,7 @@ mode leader keys. The layer is in beta, and currently only has been tested for H
 
 * Install
 ** Layer
-To use this configuration layer, add it to your =~/.emacs.d/private/= or another directory in your
+To use this configuration layer, add it to your =~/.emacs.d/private/hugo= or another directory in your
 Spacemacs layer search path. You will need to add =hugo= to the existing
 =dotspacemacs-configuration-layers= list in this file.
 
